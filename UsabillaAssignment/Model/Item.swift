@@ -14,8 +14,9 @@ struct Item : Codable {
     let geo : GeoLocation
     let rating : Int
     let labels : [String]
+    var createdAt : Int
     
     private enum CodingKeys : String, CodingKey {
-        case id, browser = "computed_browser", geo, rating , labels
+        case id, browser = "computed_browser", geo, rating , labels , createdAt = "creation_date"
     }
 }

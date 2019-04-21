@@ -9,17 +9,14 @@
 import Foundation
 import Charts
 
-struct ChartViewModel {
+class ChartViewModel : NSObject {
 
-    let items : [Item]
-    let kpi : KPI
     var titleString : String
-    let chartType : ChartType = ChartType.Pie
+    var chartType : ChartType = ChartType.Pie
     var groupedData : [String : [Any]]
     
-    init(items : [Item] , kpi : KPI){
-        self.items = items
-        self.kpi = kpi
+    init(items : [Item] , kpi : KPI, defaultChartType : ChartType){
+        self.chartType = defaultChartType
         
         switch kpi {
         case KPI.Browser:

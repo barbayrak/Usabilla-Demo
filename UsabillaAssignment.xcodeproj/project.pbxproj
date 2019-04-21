@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1DF684E9757EEF9CD06C2090 /* Pods_UsabillaAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37949F9C8CBAE31CAD19729 /* Pods_UsabillaAssignmentUITests.framework */; };
 		7B3593279A05A8B54382BD0D /* Pods_UsabillaAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294289AD2E6B0965A3E9F2E2 /* Pods_UsabillaAssignment.framework */; };
+		BB27BEB2226B4150008CD446 /* ratingPredictor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BB27BEB1226B4150008CD446 /* ratingPredictor.mlmodel */; };
+		BB27BEB4226B424B008CD446 /* InsightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27BEB3226B424B008CD446 /* InsightCollectionViewCell.swift */; };
+		BB27BEBC226B4AC4008CD446 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27BEBB226B4AC4008CD446 /* Constants.swift */; };
 		BB55BE182264FAB100543616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE172264FAB100543616 /* AppDelegate.swift */; };
 		BB55BE1F2264FAB100543616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE1E2264FAB100543616 /* Assets.xcassets */; };
 		BB55BE222264FAB100543616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE202264FAB100543616 /* LaunchScreen.storyboard */; };
@@ -24,7 +27,11 @@
 		BB55BE5D2266255200543616 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE5C2266255200543616 /* ChartViewModel.swift */; };
 		BB55BE5F22667BE100543616 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE5E22667BE100543616 /* Feedback.swift */; };
 		BB6A54ED22676B070067E614 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A54EC22676B070067E614 /* Utils.swift */; };
-		BB6A54EF2267BC680067E614 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A54EE2267BC680067E614 /* Constants.swift */; };
+		BB6A54EF2267BC680067E614 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A54EE2267BC680067E614 /* Types.swift */; };
+		BB6A54F12268B0880067E614 /* Insight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6A54F02268B0880067E614 /* Insight.storyboard */; };
+		BB6A54F32268BBBB0067E614 /* DashboardFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6A54F22268BBBB0067E614 /* DashboardFilterController.swift */; };
+		BBFDEAB72269147000D5903D /* InsightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEAB62269147000D5903D /* InsightsController.swift */; };
+		BBFDEABB22691BFF00D5903D /* InsightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */; };
 		CAB6DACF9C019AE277AC0634 /* Pods_UsabillaAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920BB8CABE22EAB6108FE1AC /* Pods_UsabillaAssignmentTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +58,9 @@
 		5F1FCB764AAD3A2CBA56D7C8 /* Pods-UsabillaAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentUITests/Pods-UsabillaAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6AAE1F91C6DE6DB034FC24B6 /* Pods-UsabillaAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignment.release.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignment/Pods-UsabillaAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		920BB8CABE22EAB6108FE1AC /* Pods_UsabillaAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsabillaAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB27BEB1226B4150008CD446 /* ratingPredictor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ratingPredictor.mlmodel; sourceTree = "<group>"; };
+		BB27BEB3226B424B008CD446 /* InsightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB27BEBB226B4AC4008CD446 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BB55BE142264FAB100543616 /* UsabillaAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsabillaAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB55BE172264FAB100543616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB55BE1E2264FAB100543616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,8 +82,12 @@
 		BB55BE5C2266255200543616 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		BB55BE5E22667BE100543616 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		BB6A54EC22676B070067E614 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		BB6A54EE2267BC680067E614 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB6A54EE2267BC680067E614 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		BB6A54F02268B0880067E614 /* Insight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Insight.storyboard; sourceTree = "<group>"; };
+		BB6A54F22268BBBB0067E614 /* DashboardFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFilterController.swift; sourceTree = "<group>"; };
 		BBEBD408C4CCE76CECFC4A05 /* Pods-UsabillaAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBFDEAB62269147000D5903D /* InsightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsController.swift; sourceTree = "<group>"; };
+		BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightViewModel.swift; sourceTree = "<group>"; };
 		DC85FBAC8F2B61D9EC8DC8BF /* Pods-UsabillaAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignment.debug.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignment/Pods-UsabillaAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		E45B84759A69F7CCFDE929DC /* Pods-UsabillaAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		F37949F9C8CBAE31CAD19729 /* Pods_UsabillaAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsabillaAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +132,63 @@
 				5F1FCB764AAD3A2CBA56D7C8 /* Pods-UsabillaAssignmentUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB27BEB0226B4145008CD446 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				BB27BEB1226B4150008CD446 /* ratingPredictor.mlmodel */,
+			);
+			path = MLModels;
+			sourceTree = "<group>";
+		};
+		BB27BEB5226B457B008CD446 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BB55BE58226622E900543616 /* DashboardController.swift */,
+				BB6A54F22268BBBB0067E614 /* DashboardFilterController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BB27BEB6226B4582008CD446 /* Insight */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDEAB62269147000D5903D /* InsightsController.swift */,
+			);
+			path = Insight;
+			sourceTree = "<group>";
+		};
+		BB27BEB7226B458E008CD446 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BB55BE5A2266250E00543616 /* ChartCollectionViewCell.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BB27BEB8226B4596008CD446 /* Insight */ = {
+			isa = PBXGroup;
+			children = (
+				BB27BEB3226B424B008CD446 /* InsightCollectionViewCell.swift */,
+			);
+			path = Insight;
+			sourceTree = "<group>";
+		};
+		BB27BEB9226B45A2008CD446 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				BB55BE5C2266255200543616 /* ChartViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BB27BEBA226B45AA008CD446 /* Insight */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */,
+			);
+			path = Insight;
 			sourceTree = "<group>";
 		};
 		BB55BE0B2264FAB100543616 = {
@@ -180,7 +251,8 @@
 		BB55BE452264FAB700543616 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BB55BE5A2266250E00543616 /* ChartCollectionViewCell.swift */,
+				BB27BEB7226B458E008CD446 /* Dashboard */,
+				BB27BEB8226B4596008CD446 /* Insight */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,7 +268,8 @@
 		BB55BE472264FAC300543616 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BB55BE5C2266255200543616 /* ChartViewModel.swift */,
+				BB27BEB9226B45A2008CD446 /* Dashboard */,
+				BB27BEBA226B45AA008CD446 /* Insight */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -206,6 +279,7 @@
 			children = (
 				BB55BE202264FAB100543616 /* LaunchScreen.storyboard */,
 				BB55BE4B22650C5600543616 /* Dashboard.storyboard */,
+				BB6A54F02268B0880067E614 /* Insight.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -224,8 +298,10 @@
 		BB55BE4A2265015300543616 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				BB27BEB0226B4145008CD446 /* MLModels */,
+				BB27BEBB226B4AC4008CD446 /* Constants.swift */,
+				BB6A54EE2267BC680067E614 /* Types.swift */,
 				BB6A54EC22676B070067E614 /* Utils.swift */,
-				BB6A54EE2267BC680067E614 /* Constants.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -233,7 +309,8 @@
 		BB55BE5722651ADD00543616 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BB55BE58226622E900543616 /* DashboardController.swift */,
+				BB27BEB5226B457B008CD446 /* Dashboard */,
+				BB27BEB6226B4582008CD446 /* Insight */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -359,6 +436,7 @@
 				BB55BE222264FAB100543616 /* LaunchScreen.storyboard in Resources */,
 				BB55BE4C22650C5600543616 /* Dashboard.storyboard in Resources */,
 				BB55BE1F2264FAB100543616 /* Assets.xcassets in Resources */,
+				BB6A54F12268B0880067E614 /* Insight.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,12 +552,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB27BEB2226B4150008CD446 /* ratingPredictor.mlmodel in Sources */,
+				BB6A54F32268BBBB0067E614 /* DashboardFilterController.swift in Sources */,
 				BB55BE5B2266250E00543616 /* ChartCollectionViewCell.swift in Sources */,
-				BB6A54EF2267BC680067E614 /* Constants.swift in Sources */,
+				BBFDEABB22691BFF00D5903D /* InsightViewModel.swift in Sources */,
+				BBFDEAB72269147000D5903D /* InsightsController.swift in Sources */,
+				BB6A54EF2267BC680067E614 /* Types.swift in Sources */,
 				BB55BE5F22667BE100543616 /* Feedback.swift in Sources */,
+				BB27BEB4226B424B008CD446 /* InsightCollectionViewCell.swift in Sources */,
 				BB55BE522265172700543616 /* Browser.swift in Sources */,
 				BB55BE4E22650D5000543616 /* FeedbackService.swift in Sources */,
 				BB55BE542265188400543616 /* GeoLocation.swift in Sources */,
+				BB27BEBC226B4AC4008CD446 /* Constants.swift in Sources */,
 				BB6A54ED22676B070067E614 /* Utils.swift in Sources */,
 				BB55BE182264FAB100543616 /* AppDelegate.swift in Sources */,
 				BB55BE5D2266255200543616 /* ChartViewModel.swift in Sources */,

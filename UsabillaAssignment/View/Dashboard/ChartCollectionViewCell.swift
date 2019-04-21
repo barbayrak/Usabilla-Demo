@@ -94,18 +94,30 @@ class ChartCollectionViewCell: UICollectionViewCell {
         
         let chart = BarChartView()
         chart.frame = CGRect(x: 0, y: 0, width: chartView.frame.width, height: chartView.frame.height)
+        chart.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        var data = [BarChartDataEntry]()
+        var data = [BarChartDataSet]()
         for i in 0..<dataKeyArray.count {
-            data.append(BarChartDataEntry(x: Double(i), y: Double(dataValuesArray[i].count)))
+            let value = [BarChartDataEntry(x: Double(i), y: Double(dataValuesArray[i].count))]
+            let dataSet = BarChartDataSet(values: value, label: dataKeyArray[i].description)
+            dataSet.colors = [colors[i % colors.count]]
+            data.append(dataSet)
         }
         
-        let chartDataset = BarChartDataSet(values: data, label: "")
-        chartDataset.colors = colors
-        let chartData = BarChartData(dataSet: chartDataset)
+        let chartData = BarChartData(dataSets: data)
         
+        let valueFormatter = NumberFormatter()
+        valueFormatter.numberStyle = .none
+        valueFormatter.multiplier = 1
+        chartData.setValueFormatter(DefaultValueFormatter(formatter: valueFormatter))
         
         chart.data = chartData
+        
+        chart.xAxis.drawLabelsEnabled = false
+        chart.xAxis.drawGridLinesEnabled = false
+        chart.rightAxis.drawGridLinesEnabled = false
+        chart.leftAxis.drawGridLinesEnabled = false
+        
         chart.animate(xAxisDuration: 1.5, yAxisDuration: 1.5)
         chartView.addSubview(chart)
     }
@@ -116,18 +128,31 @@ class ChartCollectionViewCell: UICollectionViewCell {
         
         let chart = HorizontalBarChartView()
         chart.frame = CGRect(x: 0, y: 0, width: chartView.frame.width, height: chartView.frame.height)
+        chart.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
-        var data = [BarChartDataEntry]()
+
+        var data = [BarChartDataSet]()
         for i in 0..<dataKeyArray.count {
-            data.append(BarChartDataEntry(x: Double(i),y: Double(dataValuesArray[i].count)))
+            let value = [BarChartDataEntry(x: Double(i), y: Double(dataValuesArray[i].count))]
+            let dataSet = BarChartDataSet(values: value, label: dataKeyArray[i].description)
+            dataSet.colors = [colors[i % colors.count]]
+            data.append(dataSet)
         }
         
-        let chartDataset = BarChartDataSet(values: data, label: "")
-        chartDataset.colors = colors
-        let chartData = BarChartData(dataSet: chartDataset)
+        let chartData = BarChartData(dataSets: data)
         
+        let valueFormatter = NumberFormatter()
+        valueFormatter.numberStyle = .none
+        valueFormatter.multiplier = 1
+        chartData.setValueFormatter(DefaultValueFormatter(formatter: valueFormatter))
         
         chart.data = chartData
+        
+        chart.xAxis.drawLabelsEnabled = false
+        chart.xAxis.drawGridLinesEnabled = false
+        chart.rightAxis.drawGridLinesEnabled = false
+        chart.leftAxis.drawGridLinesEnabled = false
+        
         chart.animate(xAxisDuration: 1.5, yAxisDuration: 1.5)
         chartView.addSubview(chart)
     }
@@ -135,10 +160,13 @@ class ChartCollectionViewCell: UICollectionViewCell {
     @IBAction func chartStyleChanged(_ sender: Any) {
         switch chartStyleControl.selectedSegmentIndex {
         case 0:
+            chartViewModel.chartType = ChartType.Pie
             self.chartStyle = ChartType.Pie
         case 1:
+            chartViewModel.chartType = ChartType.Bar
             self.chartStyle = ChartType.Bar
         case 2:
+            chartViewModel.chartType = ChartType.HorizontalBar
             self.chartStyle = ChartType.HorizontalBar
         default:
             break
