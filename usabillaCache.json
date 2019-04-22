@@ -1,0 +1,702 @@
+[
+    {
+        "country" : "MX",
+        "createdAt" : 1389993009,
+        "version" : "31.0",
+        "rating" : 1,
+        "platform" : "MacOSX"
+    },
+    {
+        "createdAt" : 1390012586,
+        "version" : "7.0",
+        "platform" : "MacOSX",
+        "country" : "AU",
+        "rating" : 1
+    },
+    {
+        "version" : "32.0",
+        "platform" : "Win7",
+        "country" : "PL",
+        "rating" : 2,
+        "createdAt" : 1390022084
+    },
+    {
+        "version" : "32.0",
+        "country" : "NL",
+        "createdAt" : 1390136765,
+        "platform" : "Win7",
+        "rating" : 3
+    },
+    {
+        "createdAt" : 1390166659,
+        "country" : "NL",
+        "platform" : "Android",
+        "version" : "4.0",
+        "rating" : 5
+    },
+    {
+        "platform" : "Win8.1",
+        "country" : "NZ",
+        "createdAt" : 1390187664,
+        "rating" : 4,
+        "version" : "31.0"
+    },
+    {
+        "version" : "32.0",
+        "rating" : 4,
+        "platform" : "MacOSX",
+        "createdAt" : 1390206976,
+        "country" : "NL"
+    },
+    {
+        "createdAt" : 1390212910,
+        "version" : "32.0",
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "rating" : 4
+    },
+    {
+        "platform" : "WinXP",
+        "country" : "NL",
+        "rating" : 3,
+        "version" : "32.0",
+        "createdAt" : 1390219376
+    },
+    {
+        "version" : "32.0",
+        "country" : "NL",
+        "createdAt" : 1390226579,
+        "platform" : "MacOSX",
+        "rating" : 2
+    },
+    {
+        "platform" : "MacOSX",
+        "rating" : 3,
+        "country" : "US",
+        "createdAt" : 1390243571,
+        "version" : "32.0"
+    },
+    {
+        "version" : "32.0",
+        "rating" : 4,
+        "platform" : "MacOSX",
+        "country" : "US",
+        "createdAt" : 1390243736
+    },
+    {
+        "platform" : "Win7",
+        "country" : "IN",
+        "rating" : 3,
+        "createdAt" : 1390295815,
+        "version" : "32.0"
+    },
+    {
+        "createdAt" : 1390304792,
+        "rating" : 3,
+        "platform" : "Win7",
+        "version" : "32.0",
+        "country" : "FR"
+    },
+    {
+        "version" : "7.0",
+        "createdAt" : 1390307841,
+        "country" : "NL",
+        "rating" : 4,
+        "platform" : "iOS"
+    },
+    {
+        "platform" : "iOS",
+        "version" : "7.0",
+        "country" : "NL",
+        "createdAt" : 1390307923,
+        "rating" : 3
+    },
+    {
+        "version" : "32.0",
+        "rating" : 2,
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "createdAt" : 1390313527
+    },
+    {
+        "rating" : 2,
+        "platform" : "Win8",
+        "createdAt" : 1390315569,
+        "country" : "NL",
+        "version" : "26.0"
+    },
+    {
+        "createdAt" : 1390317342,
+        "rating" : 5,
+        "platform" : "Win7",
+        "country" : "IN",
+        "version" : "31.0"
+    },
+    {
+        "version" : "32.0",
+        "rating" : 2,
+        "createdAt" : 1390322912,
+        "country" : "NL",
+        "platform" : "MacOSX"
+    },
+    {
+        "country" : "GB",
+        "version" : "32.0",
+        "platform" : "Win7",
+        "rating" : 4,
+        "createdAt" : 1390326002
+    },
+    {
+        "country" : "BR",
+        "createdAt" : 1390329597,
+        "rating" : 4,
+        "platform" : "MacOSX",
+        "version" : "32.0"
+    },
+    {
+        "country" : "BR",
+        "platform" : "MacOSX",
+        "rating" : 5,
+        "createdAt" : 1390329725,
+        "version" : "32.0"
+    },
+    {
+        "rating" : 1,
+        "version" : "32.0",
+        "country" : "US",
+        "createdAt" : 1390354070,
+        "platform" : "Win7"
+    },
+    {
+        "platform" : "MacOSX",
+        "country" : "SE",
+        "version" : "31.0",
+        "createdAt" : 1390383910,
+        "rating" : 3
+    },
+    {
+        "createdAt" : 1390387825,
+        "rating" : 2,
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "version" : "32.0"
+    },
+    {
+        "version" : "32.0",
+        "country" : "NL",
+        "rating" : 4,
+        "createdAt" : 1390387907,
+        "platform" : "MacOSX"
+    },
+    {
+        "rating" : 1,
+        "platform" : "WinXP",
+        "version" : "31.0",
+        "country" : "IL",
+        "createdAt" : 1390393070
+    },
+    {
+        "version" : "32.0",
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "rating" : 3,
+        "createdAt" : 1390396068
+    },
+    {
+        "createdAt" : 1390400026,
+        "platform" : "MacOSX",
+        "version" : "26.0",
+        "rating" : 4,
+        "country" : "DK"
+    },
+    {
+        "version" : "9.0",
+        "country" : "TR",
+        "rating" : 4,
+        "platform" : "Win7",
+        "createdAt" : 1390401881
+    },
+    {
+        "createdAt" : 1390405723,
+        "platform" : "Win7",
+        "rating" : 1,
+        "version" : "11.0",
+        "country" : "NL"
+    },
+    {
+        "rating" : 2,
+        "country" : "RU",
+        "platform" : "MacOSX",
+        "createdAt" : 1390407440,
+        "version" : "7.0"
+    },
+    {
+        "platform" : "Win7",
+        "createdAt" : 1390430981,
+        "version" : "32.0",
+        "rating" : 4,
+        "country" : "MX"
+    },
+    {
+        "platform" : "Win8",
+        "createdAt" : 1390453631,
+        "country" : "IN",
+        "version" : "26.0",
+        "rating" : 3
+    },
+    {
+        "version" : "32.0",
+        "rating" : 4,
+        "createdAt" : 1390465499,
+        "platform" : "Win7",
+        "country" : "NL"
+    },
+    {
+        "country" : "IN",
+        "platform" : "Win7",
+        "rating" : 1,
+        "createdAt" : 1390475526,
+        "version" : "32.0"
+    },
+    {
+        "platform" : "WinXP",
+        "createdAt" : 1390552626,
+        "country" : "NL",
+        "rating" : 4,
+        "version" : "17.0"
+    },
+    {
+        "platform" : "Win7",
+        "version" : "32.0",
+        "rating" : 4,
+        "country" : "GB",
+        "createdAt" : 1390566918
+    },
+    {
+        "rating" : 2,
+        "country" : "NL",
+        "createdAt" : 1390576360,
+        "platform" : "MacOSX",
+        "version" : "32.0"
+    },
+    {
+        "createdAt" : 1390576413,
+        "country" : "NL",
+        "version" : "32.0",
+        "platform" : "MacOSX",
+        "rating" : 4
+    },
+    {
+        "rating" : 4,
+        "country" : "US",
+        "version" : "26.0",
+        "createdAt" : 1390589194,
+        "platform" : "MacOSX"
+    },
+    {
+        "platform" : "Win7",
+        "country" : "NL",
+        "createdAt" : 1390737303,
+        "rating" : 4,
+        "version" : "26.0"
+    },
+    {
+        "country" : "GB",
+        "platform" : "iOS",
+        "rating" : 2,
+        "createdAt" : 1390750734,
+        "version" : "7.0"
+    },
+    {
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "rating" : 4,
+        "createdAt" : 1390772875,
+        "version" : "7.0"
+    },
+    {
+        "platform" : "Win7",
+        "createdAt" : 1390809256,
+        "rating" : 4,
+        "version" : "26.0",
+        "country" : "IN"
+    },
+    {
+        "version" : "32.0",
+        "rating" : 1,
+        "country" : "DE",
+        "createdAt" : 1390815978,
+        "platform" : "Win7"
+    },
+    {
+        "rating" : 2,
+        "country" : "BE",
+        "createdAt" : 1390820623,
+        "platform" : "Win8.1",
+        "version" : "32.0"
+    },
+    {
+        "version" : "32.0",
+        "platform" : "Win8.1",
+        "rating" : 3,
+        "country" : "BE",
+        "createdAt" : 1390820652
+    },
+    {
+        "platform" : "WinVista",
+        "version" : "32.0",
+        "createdAt" : 1390822895,
+        "country" : "NL",
+        "rating" : 2
+    },
+    {
+        "country" : "IL",
+        "rating" : 4,
+        "createdAt" : 1390830834,
+        "platform" : "Win7",
+        "version" : "32.0"
+    },
+    {
+        "platform" : "Win7",
+        "country" : "CA",
+        "createdAt" : 1390849497,
+        "version" : "11.0",
+        "rating" : 4
+    },
+    {
+        "createdAt" : 1390856210,
+        "rating" : 4,
+        "version" : "32.0",
+        "platform" : "Win7",
+        "country" : "US"
+    },
+    {
+        "platform" : "MacOSX",
+        "createdAt" : 1390911542,
+        "version" : "32.0",
+        "country" : "NL",
+        "rating" : 2
+    },
+    {
+        "rating" : 3,
+        "version" : "32.0",
+        "country" : "NL",
+        "createdAt" : 1390911638,
+        "platform" : "MacOSX"
+    },
+    {
+        "version" : "32.0",
+        "platform" : "MacOSX",
+        "createdAt" : 1390917445,
+        "country" : "BE",
+        "rating" : 2
+    },
+    {
+        "version" : "11.0",
+        "createdAt" : 1390924636,
+        "platform" : "Win7",
+        "rating" : 5,
+        "country" : "BE"
+    },
+    {
+        "rating" : 4,
+        "country" : "ES",
+        "createdAt" : 1390926499,
+        "version" : "32.0",
+        "platform" : "MacOSX"
+    },
+    {
+        "version" : "32.0",
+        "createdAt" : 1390927083,
+        "rating" : 1,
+        "platform" : "Win7",
+        "country" : "MX"
+    },
+    {
+        "createdAt" : 1390956363,
+        "version" : "30.0",
+        "rating" : 4,
+        "platform" : "MacOSX",
+        "country" : "US"
+    },
+    {
+        "platform" : "MacOSX",
+        "rating" : 2,
+        "createdAt" : 1390987612,
+        "version" : "32.0",
+        "country" : "NL"
+    },
+    {
+        "version" : "32.0",
+        "rating" : 2,
+        "platform" : "Win7",
+        "createdAt" : 1390988247,
+        "country" : "PS"
+    },
+    {
+        "country" : "NL",
+        "version" : "32.0",
+        "rating" : 2,
+        "createdAt" : 1391005724,
+        "platform" : "MacOSX"
+    },
+    {
+        "platform" : "MacOSX",
+        "country" : "CL",
+        "version" : "7.0",
+        "rating" : 4,
+        "createdAt" : 1391034963
+    },
+    {
+        "rating" : 5,
+        "createdAt" : 1391048391,
+        "version" : "32.0",
+        "platform" : "MacOSX",
+        "country" : "US"
+    },
+    {
+        "country" : "IN",
+        "rating" : 4,
+        "createdAt" : 1391064832,
+        "platform" : "Win7",
+        "version" : "31.0"
+    },
+    {
+        "version" : "31.0",
+        "rating" : 1,
+        "createdAt" : 1391064849,
+        "platform" : "Win7",
+        "country" : "IN"
+    },
+    {
+        "country" : "CN",
+        "createdAt" : 1391066083,
+        "version" : "32.0",
+        "rating" : 4,
+        "platform" : "MacOSX"
+    },
+    {
+        "country" : "PL",
+        "rating" : 3,
+        "createdAt" : 1391069222,
+        "platform" : "Win7",
+        "version" : "32.0"
+    },
+    {
+        "version" : "32.0",
+        "createdAt" : 1391074229,
+        "platform" : "MacOSX",
+        "rating" : 2,
+        "country" : "NL"
+    },
+    {
+        "version" : "32.0",
+        "platform" : "Win7",
+        "rating" : 3,
+        "country" : "GB",
+        "createdAt" : 1391083142
+    },
+    {
+        "country" : "NL",
+        "createdAt" : 1391087595,
+        "rating" : 5,
+        "platform" : "Win7",
+        "version" : "26.0"
+    },
+    {
+        "rating" : 1,
+        "country" : "FI",
+        "createdAt" : 1391089250,
+        "platform" : "Win8",
+        "version" : "32.0"
+    },
+    {
+        "createdAt" : 1391091836,
+        "rating" : 2,
+        "version" : "32.0",
+        "platform" : "MacOSX",
+        "country" : "NL"
+    },
+    {
+        "createdAt" : 1391091898,
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "rating" : 5,
+        "version" : "32.0"
+    },
+    {
+        "platform" : "MacOSX",
+        "rating" : 2,
+        "createdAt" : 1391094927,
+        "country" : "NL",
+        "version" : "32.0"
+    },
+    {
+        "platform" : "MacOSX",
+        "createdAt" : 1391095395,
+        "country" : "DE",
+        "rating" : 1,
+        "version" : "30.0"
+    },
+    {
+        "country" : "PL",
+        "createdAt" : 1391096668,
+        "version" : "32.0",
+        "platform" : "Win7",
+        "rating" : 3
+    },
+    {
+        "country" : "GB",
+        "version" : "32.0",
+        "createdAt" : 1391105923,
+        "platform" : "Win7",
+        "rating" : 4
+    },
+    {
+        "country" : "US",
+        "platform" : "MacOSX",
+        "version" : "7.0",
+        "createdAt" : 1391121576,
+        "rating" : 4
+    },
+    {
+        "version" : "32.0",
+        "platform" : "MacOSX",
+        "createdAt" : 1391125759,
+        "rating" : 4,
+        "country" : "GB"
+    },
+    {
+        "rating" : 5,
+        "platform" : "MacOSX",
+        "createdAt" : 1391181249,
+        "country" : "CO",
+        "version" : "32.0"
+    },
+    {
+        "createdAt" : 1391188243,
+        "version" : "32.0",
+        "rating" : 2,
+        "country" : "US",
+        "platform" : "MacOSX"
+    },
+    {
+        "country" : "US",
+        "rating" : 2,
+        "createdAt" : 1391191871,
+        "version" : "26.0",
+        "platform" : "Win7"
+    },
+    {
+        "createdAt" : 1391194663,
+        "platform" : "Win7",
+        "rating" : 5,
+        "version" : "32.0",
+        "country" : "NL"
+    },
+    {
+        "country" : "US",
+        "platform" : "MacOSX",
+        "version" : "7.0",
+        "createdAt" : 1391197935,
+        "rating" : 4
+    },
+    {
+        "platform" : "Win7",
+        "country" : "US",
+        "createdAt" : 1391202838,
+        "version" : "32.0",
+        "rating" : 3
+    },
+    {
+        "createdAt" : 1391205332,
+        "rating" : 3,
+        "country" : "CO",
+        "platform" : "Win7",
+        "version" : "32.0"
+    },
+    {
+        "createdAt" : 1391285366,
+        "country" : "US",
+        "version" : "32.0",
+        "platform" : "MacOSX",
+        "rating" : 3
+    },
+    {
+        "version" : "32.0",
+        "country" : "GB",
+        "createdAt" : 1391293705,
+        "platform" : "MacOSX",
+        "rating" : 3
+    },
+    {
+        "createdAt" : 1391396715,
+        "platform" : "Win7",
+        "rating" : 4,
+        "country" : "CN",
+        "version" : "32.0"
+    },
+    {
+        "createdAt" : 1391416254,
+        "platform" : "Win7",
+        "rating" : 3,
+        "country" : "PL",
+        "version" : "32.0"
+    },
+    {
+        "version" : "32.0",
+        "createdAt" : 1391416288,
+        "country" : "PL",
+        "platform" : "Win7",
+        "rating" : 3
+    },
+    {
+        "platform" : "Win7",
+        "country" : "IN",
+        "createdAt" : 1391417844,
+        "rating" : 4,
+        "version" : "9.0"
+    },
+    {
+        "country" : "ZA",
+        "createdAt" : 1391430166,
+        "platform" : "Win7",
+        "version" : "26.0",
+        "rating" : 4
+    },
+    {
+        "createdAt" : 1391431306,
+        "rating" : 4,
+        "platform" : "Win7",
+        "country" : "CH",
+        "version" : "32.0"
+    },
+    {
+        "platform" : "MacOSX",
+        "rating" : 2,
+        "country" : "NL",
+        "version" : "32.0",
+        "createdAt" : 1391445156
+    },
+    {
+        "version" : "32.0",
+        "rating" : 4,
+        "country" : "NL",
+        "platform" : "MacOSX",
+        "createdAt" : 1391445225
+    },
+    {
+        "platform" : "MacOSX",
+        "createdAt" : 1391445293,
+        "version" : "32.0",
+        "rating" : 2,
+        "country" : "FR"
+    },
+    {
+        "rating" : 5,
+        "country" : "FR",
+        "createdAt" : 1391445344,
+        "platform" : "MacOSX",
+        "version" : "32.0"
+    }
+]

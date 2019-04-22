@@ -154,17 +154,17 @@ extension DashboardController : UICollectionViewDelegateFlowLayout {
         switch device {
         case .pad:
             //Ipad
-            if UIDevice.current.orientation == UIDeviceOrientation.portrait || UIDevice.current.orientation == UIDeviceOrientation.portraitUpsideDown {
-                return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.width / 2)
-            }else{
+            if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft || UIDevice.current.orientation == UIDeviceOrientation.landscapeRight {
                 return CGSize(width: collectionView.frame.width / 3, height: collectionView.frame.height / 2)
+            }else{
+                return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.width / 2)
             }
         default:
             //Iphone
-            if UIDevice.current.orientation == UIDeviceOrientation.portrait || UIDevice.current.orientation == UIDeviceOrientation.portraitUpsideDown {
-                return CGSize(width: collectionView.frame.width, height: collectionView.frame.width)
-            }else{
+            if UIDevice.current.orientation == UIDeviceOrientation.landscapeRight || UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
                 return CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.height)
+            }else{
+               return CGSize(width: collectionView.frame.width, height: collectionView.frame.width)
             }
         }
     }

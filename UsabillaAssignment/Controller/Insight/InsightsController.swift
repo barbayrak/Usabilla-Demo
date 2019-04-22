@@ -71,17 +71,17 @@ extension InsightsController : UICollectionViewDelegateFlowLayout {
         switch device {
         case .pad:
             //Ipad
-            if UIDevice.current.orientation == UIDeviceOrientation.portrait || UIDevice.current.orientation == UIDeviceOrientation.portraitUpsideDown {
-                return CGSize(width: collectionView.frame.width / 2, height: 80)
-            }else{
+            if UIDevice.current.orientation == UIDeviceOrientation.landscapeRight || UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
                 return CGSize(width: collectionView.frame.width / 3, height: 80)
+            }else{
+                return CGSize(width: collectionView.frame.width / 2, height: 80)
             }
         default:
             //Iphone
-            if UIDevice.current.orientation == UIDeviceOrientation.portrait || UIDevice.current.orientation == UIDeviceOrientation.portraitUpsideDown {
-                return CGSize(width: collectionView.frame.width, height: 80)
-            }else{
+            if UIDevice.current.orientation == UIDeviceOrientation.landscapeRight || UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
                 return CGSize(width: collectionView.frame.width / 2, height: 80)
+            }else{
+                return CGSize(width: collectionView.frame.width, height: 80)
             }
         }
         
