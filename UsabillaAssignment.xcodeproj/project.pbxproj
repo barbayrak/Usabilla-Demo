@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DF684E9757EEF9CD06C2090 /* Pods_UsabillaAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37949F9C8CBAE31CAD19729 /* Pods_UsabillaAssignmentUITests.framework */; };
 		7B3593279A05A8B54382BD0D /* Pods_UsabillaAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294289AD2E6B0965A3E9F2E2 /* Pods_UsabillaAssignment.framework */; };
+		850D48547181E5990A8EB460 /* libPods-UsabillaAssignmentUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C5D384E62B20CB5E17EF36 /* libPods-UsabillaAssignmentUITests.a */; };
 		BB27BEB2226B4150008CD446 /* ratingPredictor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BB27BEB1226B4150008CD446 /* ratingPredictor.mlmodel */; };
 		BB27BEB4226B424B008CD446 /* InsightCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27BEB3226B424B008CD446 /* InsightCollectionViewCell.swift */; };
 		BB27BEBC226B4AC4008CD446 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB27BEBB226B4AC4008CD446 /* Constants.swift */; };
@@ -19,7 +19,6 @@
 		BB55BE182264FAB100543616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE172264FAB100543616 /* AppDelegate.swift */; };
 		BB55BE1F2264FAB100543616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE1E2264FAB100543616 /* Assets.xcassets */; };
 		BB55BE222264FAB100543616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE202264FAB100543616 /* LaunchScreen.storyboard */; };
-		BB55BE2D2264FAB100543616 /* UsabillaAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE2C2264FAB100543616 /* UsabillaAssignmentTests.swift */; };
 		BB55BE382264FAB100543616 /* UsabillaAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE372264FAB100543616 /* UsabillaAssignmentUITests.swift */; };
 		BB55BE4C22650C5600543616 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE4B22650C5600543616 /* Dashboard.storyboard */; };
 		BB55BE4E22650D5000543616 /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE4D22650D5000543616 /* FeedbackService.swift */; };
@@ -37,6 +36,12 @@
 		BBE21C9A226DD5A90079D5E4 /* FeedbackItemEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21C94226DD5A90079D5E4 /* FeedbackItemEntity+CoreDataProperties.swift */; };
 		BBE21C9C226DD5A90079D5E4 /* BrowserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21C96226DD5A90079D5E4 /* BrowserEntity+CoreDataProperties.swift */; };
 		BBE21C9E226DD5A90079D5E4 /* GeoLocationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21C98226DD5A90079D5E4 /* GeoLocationEntity+CoreDataProperties.swift */; };
+		BBE21CA3226DDEAD0079D5E4 /* DashboardControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CA2226DDEAD0079D5E4 /* DashboardControllerSpec.swift */; };
+		BBE21CA5226DDEC90079D5E4 /* DashboardFilterControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CA4226DDEC90079D5E4 /* DashboardFilterControllerSpec.swift */; };
+		BBE21CA7226DDEE60079D5E4 /* InsightControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CA6226DDEE60079D5E4 /* InsightControllerSpec.swift */; };
+		BBE21CA9226DFBAE0079D5E4 /* FeedbackSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CA8226DFBAE0079D5E4 /* FeedbackSpec.swift */; };
+		BBE21CAB226DFE180079D5E4 /* ChartViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CAA226DFE180079D5E4 /* ChartViewModelSpec.swift */; };
+		BBE21CAD226DFE440079D5E4 /* InsightViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CAC226DFE440079D5E4 /* InsightViewModelSpec.swift */; };
 		BBFDEAB72269147000D5903D /* InsightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEAB62269147000D5903D /* InsightsController.swift */; };
 		BBFDEABB22691BFF00D5903D /* InsightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */; };
 		CAB6DACF9C019AE277AC0634 /* Pods_UsabillaAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920BB8CABE22EAB6108FE1AC /* Pods_UsabillaAssignmentTests.framework */; };
@@ -65,6 +70,7 @@
 		5F1FCB764AAD3A2CBA56D7C8 /* Pods-UsabillaAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentUITests/Pods-UsabillaAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6AAE1F91C6DE6DB034FC24B6 /* Pods-UsabillaAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignment.release.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignment/Pods-UsabillaAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		920BB8CABE22EAB6108FE1AC /* Pods_UsabillaAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsabillaAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C5D384E62B20CB5E17EF36 /* libPods-UsabillaAssignmentUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UsabillaAssignmentUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB27BEB1226B4150008CD446 /* ratingPredictor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ratingPredictor.mlmodel; sourceTree = "<group>"; };
 		BB27BEB3226B424B008CD446 /* InsightCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB27BEBB226B4AC4008CD446 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -78,7 +84,6 @@
 		BB55BE212264FAB100543616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB55BE232264FAB100543616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB55BE282264FAB100543616 /* UsabillaAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsabillaAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB55BE2C2264FAB100543616 /* UsabillaAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsabillaAssignmentTests.swift; sourceTree = "<group>"; };
 		BB55BE2E2264FAB100543616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB55BE332264FAB100543616 /* UsabillaAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsabillaAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB55BE372264FAB100543616 /* UsabillaAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsabillaAssignmentUITests.swift; sourceTree = "<group>"; };
@@ -99,12 +104,17 @@
 		BBE21C94226DD5A90079D5E4 /* FeedbackItemEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedbackItemEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BBE21C96226DD5A90079D5E4 /* BrowserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BBE21C98226DD5A90079D5E4 /* GeoLocationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeoLocationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BBE21CA2226DDEAD0079D5E4 /* DashboardControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardControllerSpec.swift; sourceTree = "<group>"; };
+		BBE21CA4226DDEC90079D5E4 /* DashboardFilterControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFilterControllerSpec.swift; sourceTree = "<group>"; };
+		BBE21CA6226DDEE60079D5E4 /* InsightControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightControllerSpec.swift; sourceTree = "<group>"; };
+		BBE21CA8226DFBAE0079D5E4 /* FeedbackSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackSpec.swift; sourceTree = "<group>"; };
+		BBE21CAA226DFE180079D5E4 /* ChartViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModelSpec.swift; sourceTree = "<group>"; };
+		BBE21CAC226DFE440079D5E4 /* InsightViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightViewModelSpec.swift; sourceTree = "<group>"; };
 		BBEBD408C4CCE76CECFC4A05 /* Pods-UsabillaAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBFDEAB62269147000D5903D /* InsightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsController.swift; sourceTree = "<group>"; };
 		BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightViewModel.swift; sourceTree = "<group>"; };
 		DC85FBAC8F2B61D9EC8DC8BF /* Pods-UsabillaAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignment.debug.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignment/Pods-UsabillaAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		E45B84759A69F7CCFDE929DC /* Pods-UsabillaAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
-		F37949F9C8CBAE31CAD19729 /* Pods_UsabillaAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UsabillaAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DF684E9757EEF9CD06C2090 /* Pods_UsabillaAssignmentUITests.framework in Frameworks */,
+				850D48547181E5990A8EB460 /* libPods-UsabillaAssignmentUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +298,7 @@
 		BB55BE2B2264FAB100543616 /* UsabillaAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				BB55BE2C2264FAB100543616 /* UsabillaAssignmentTests.swift */,
+				BBE21C9F226DDE350079D5E4 /* Specs */,
 				BB55BE2E2264FAB100543616 /* Info.plist */,
 			);
 			path = UsabillaAssignmentTests;
@@ -368,12 +378,41 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BBE21C9F226DDE350079D5E4 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				BBE21CA0226DDE3B0079D5E4 /* ControllerSpecs */,
+				BBE21CA1226DDE400079D5E4 /* ModelSpecs */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		BBE21CA0226DDE3B0079D5E4 /* ControllerSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				BBE21CA2226DDEAD0079D5E4 /* DashboardControllerSpec.swift */,
+				BBE21CA4226DDEC90079D5E4 /* DashboardFilterControllerSpec.swift */,
+				BBE21CA6226DDEE60079D5E4 /* InsightControllerSpec.swift */,
+			);
+			path = ControllerSpecs;
+			sourceTree = "<group>";
+		};
+		BBE21CA1226DDE400079D5E4 /* ModelSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				BBE21CA8226DFBAE0079D5E4 /* FeedbackSpec.swift */,
+				BBE21CAA226DFE180079D5E4 /* ChartViewModelSpec.swift */,
+				BBE21CAC226DFE440079D5E4 /* InsightViewModelSpec.swift */,
+			);
+			path = ModelSpecs;
+			sourceTree = "<group>";
+		};
 		BC1691860B0B4DE621D58805 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				294289AD2E6B0965A3E9F2E2 /* Pods_UsabillaAssignment.framework */,
 				920BB8CABE22EAB6108FE1AC /* Pods_UsabillaAssignmentTests.framework */,
-				F37949F9C8CBAE31CAD19729 /* Pods_UsabillaAssignmentUITests.framework */,
+				92C5D384E62B20CB5E17EF36 /* libPods-UsabillaAssignmentUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -408,6 +447,7 @@
 				BB55BE242264FAB100543616 /* Sources */,
 				BB55BE252264FAB100543616 /* Frameworks */,
 				BB55BE262264FAB100543616 /* Resources */,
+				02B95C3B4C6E49B64058ACA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -453,6 +493,7 @@
 					};
 					BB55BE272264FAB100543616 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 						TestTargetID = BB55BE132264FAB100543616;
 					};
 					BB55BE322264FAB100543616 = {
@@ -510,6 +551,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		02B95C3B4C6E49B64058ACA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4A37162257FD66E2DCEA69D3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -636,7 +701,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB55BE2D2264FAB100543616 /* UsabillaAssignmentTests.swift in Sources */,
+				BBE21CA3226DDEAD0079D5E4 /* DashboardControllerSpec.swift in Sources */,
+				BBE21CA9226DFBAE0079D5E4 /* FeedbackSpec.swift in Sources */,
+				BBE21CAD226DFE440079D5E4 /* InsightViewModelSpec.swift in Sources */,
+				BBE21CAB226DFE180079D5E4 /* ChartViewModelSpec.swift in Sources */,
+				BBE21CA7226DDEE60079D5E4 /* InsightControllerSpec.swift in Sources */,
+				BBE21CA5226DDEC90079D5E4 /* DashboardFilterControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -835,6 +905,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UsabillaAssignmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -844,6 +915,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.usabilla.assignment.UsabillaAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UsabillaAssignment.app/UsabillaAssignment";
@@ -856,6 +928,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UsabillaAssignmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

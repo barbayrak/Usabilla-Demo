@@ -2,20 +2,20 @@
 # platform :ios, '9.0'
 
 target 'UsabillaAssignment' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for UsabillaAssignment
   pod 'Charts'
 
-  target 'UsabillaAssignmentTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+end
 
-  target 'UsabillaAssignmentUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'UsabillaAssignmentTests' do
+    use_frameworks!
 
+    pod 'Quick'
+    pod 'Nimble'
+
+end
+
+target 'UsabillaAssignmentUITests' do
+    # Pods for testing
 end
