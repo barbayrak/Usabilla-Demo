@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class DashboardController: UIViewController {
 
     @IBOutlet weak var dashboardCollectionView: UICollectionView!
     
-    var feedbacks = [Item]()
+    var feedbacks = [FeedbackItem]()
     var feedbackViewModels = [ChartViewModel]()
+    
+    
     var longPressGesture: UILongPressGestureRecognizer!
     let cellId = "chartCellId"
     let filterSegueId = "filter"
@@ -36,22 +39,21 @@ class DashboardController: UIViewController {
     }
     
     func fetchData(){
-        FeedbackService.shared.fetchFeedbacks { (result) in
-            switch result {
-            case .success(let feedback):
-                self.feedbacks = feedback.items
-                self.feedbackViewModels = [
-                    ChartViewModel(items: feedback.items, kpi: KPI.Browser , defaultChartType : ChartType.Pie),
-                    ChartViewModel(items: feedback.items, kpi: KPI.Rating , defaultChartType : ChartType.HorizontalBar),
-                    ChartViewModel(items: feedback.items, kpi: KPI.GeoLocation , defaultChartType : ChartType.Bar),
-                    ChartViewModel(items: feedback.items, kpi: KPI.Label , defaultChartType : ChartType.Bar),
-                    ChartViewModel(items: feedback.items, kpi: KPI.Platform , defaultChartType : ChartType.Pie)
-                ]
-                DispatchQueue.main.async {
-                    self.dashboardCollectionView.reloadData()
-                }
-            case .failure(let err):
+        FeedbackService.shared.fetchAndSyncFeedbacks { (feedbacks, error) in
+            if let err = error {
                 print(err)
+            }
+            
+            self.feedbacks = feedbacks ?? [FeedbackItem]()
+            self.feedbackViewModels = [
+                ChartViewModel(items: self.feedbacks, kpi: KPI.Browser , defaultChartType : ChartType.Pie),
+                ChartViewModel(items: self.feedbacks, kpi: KPI.Rating , defaultChartType : ChartType.HorizontalBar),
+                ChartViewModel(items: self.feedbacks, kpi: KPI.GeoLocation , defaultChartType : ChartType.Bar),
+                ChartViewModel(items: self.feedbacks, kpi: KPI.Label , defaultChartType : ChartType.Bar),
+                ChartViewModel(items: self.feedbacks, kpi: KPI.Platform , defaultChartType : ChartType.Pie)
+            ]
+            DispatchQueue.main.async {
+                self.dashboardCollectionView.reloadData()
             }
         }
     }
@@ -59,7 +61,7 @@ class DashboardController: UIViewController {
     @objc func handleLongGesture(gesture: UILongPressGestureRecognizer) {
         switch(gesture.state) {
         case .began:
-            guard let selectedIndexPath = dashboardCollectionView.indexPathForItem(at: gesture.location(in: dashboardCollectionView)) else {break}
+            guard let selectedIndexPath = dashboardCollectionView.indexPathForItem(at: gesture.location(in: dashboardCollectionView)) else { break }
             dashboardCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath)
         case .changed:
             dashboardCollectionView.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))

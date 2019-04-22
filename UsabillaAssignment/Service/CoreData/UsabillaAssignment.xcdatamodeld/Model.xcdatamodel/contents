@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BrowserEntity" representedClassName="BrowserEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="platform" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="feedbacks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FeedbackItemEntity" inverseName="browser" inverseEntity="FeedbackItemEntity" syncable="YES"/>
+    </entity>
+    <entity name="FeedbackItemEntity" representedClassName="FeedbackItemEntity" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="labels" optional="YES" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="browser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BrowserEntity" inverseName="feedbacks" inverseEntity="BrowserEntity" syncable="YES"/>
+        <relationship name="geo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GeoLocationEntity" inverseName="feedbacks" inverseEntity="GeoLocationEntity" syncable="YES"/>
+    </entity>
+    <entity name="GeoLocationEntity" representedClassName="GeoLocationEntity" syncable="YES">
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longtitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="feedbacks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FeedbackItemEntity" inverseName="geo" inverseEntity="FeedbackItemEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BrowserEntity" positionX="-346.54296875" positionY="155.8828125" width="128" height="103"/>
+        <element name="FeedbackItemEntity" positionX="-172.703125" positionY="-67.4921875" width="128" height="133"/>
+        <element name="GeoLocationEntity" positionX="14.8671875" positionY="152.33984375" width="128" height="103"/>
+    </elements>
+</model>

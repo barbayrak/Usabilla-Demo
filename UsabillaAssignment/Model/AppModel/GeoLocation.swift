@@ -18,3 +18,4 @@ struct GeoLocation : Codable {
         case latitude = "lat",longtitude = "lon",countryCode = "country",city
     }
 }
+

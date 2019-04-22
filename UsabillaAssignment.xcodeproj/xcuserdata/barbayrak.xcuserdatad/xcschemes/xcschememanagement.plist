@@ -7,7 +7,25 @@
 		<key>UsabillaAssignment.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BB55BE132264FAB100543616</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB55BE272264FAB100543616</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB55BE322264FAB100543616</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

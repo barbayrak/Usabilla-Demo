@@ -13,7 +13,7 @@ class InsightsController: UIViewController {
     
     @IBOutlet weak var insightCollectionView: UICollectionView!
     
-    var feedbacks = [Item]()
+    var feedbacks = [FeedbackItem]()
     var insighst = [InsightViewModel]()
     
     let cellId = "insightCellId"

@@ -109,7 +109,7 @@
                         <viewLayoutGuide key="safeArea" id="IXc-SS-MQ9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="dx0-rt-jwM">
-                        <barButtonItem key="leftBarButtonItem" image="insights" style="plain" id="EQc-8v-fJK">
+                        <barButtonItem key="leftBarButtonItem" image="insights" id="EQc-8v-fJK">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="insightTapped:" destination="PcN-MU-oN1" id="Q30-Kk-zrl"/>

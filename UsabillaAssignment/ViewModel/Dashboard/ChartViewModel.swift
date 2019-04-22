@@ -15,7 +15,7 @@ class ChartViewModel : NSObject {
     var chartType : ChartType = ChartType.Pie
     var groupedData : [String : [Any]]
     
-    init(items : [Item] , kpi : KPI, defaultChartType : ChartType){
+    init(items : [FeedbackItem] , kpi : KPI, defaultChartType : ChartType){
         self.chartType = defaultChartType
         
         switch kpi {

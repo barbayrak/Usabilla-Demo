@@ -15,7 +15,7 @@ class InsightViewModel : NSObject {
     var iconName : String = ""
     var colorHex : String = "#"
     
-    init(items : [Item] , targetAnalysis : TargetAnalysis){
+    init(items : [FeedbackItem] , targetAnalysis : TargetAnalysis){
         super.init()
         
         switch targetAnalysis {
@@ -36,7 +36,7 @@ class InsightViewModel : NSObject {
         }
     }
     
-    func predictRating(feedbacks : [Item]){
+    func predictRating(feedbacks : [FeedbackItem]){
         
         let maxTimeItem = feedbacks.max(by: { $0.createdAt > $1.createdAt })
         let maxDate = maxTimeItem?.createdAt
@@ -63,7 +63,7 @@ class InsightViewModel : NSObject {
         
     }
     
-    func analyzeBrowserHighRating(feedbacks : [Item]){
+    func analyzeBrowserHighRating(feedbacks : [FeedbackItem]){
         let browserData = Dictionary(grouping: feedbacks, by: { $0.browser.name })
         let maxAverageBrowser = browserData.max { (b1, b2) -> Bool in
             return average(array: b1.value.map({ return $0.rating })) < average(array: b2.value.map({ return $0.rating }))
@@ -75,7 +75,7 @@ class InsightViewModel : NSObject {
         self.colorHex = "#00B21F"
     }
     
-    func analyzeBrowserLowRating(feedbacks : [Item]){
+    func analyzeBrowserLowRating(feedbacks : [FeedbackItem]){
         let browserData = Dictionary(grouping: feedbacks, by: { $0.browser.name })
         let minAverageBrowser = browserData.min { (b1, b2) -> Bool in
             return average(array: b1.value.map({ return $0.rating })) < average(array: b2.value.map({ return $0.rating }))
@@ -87,7 +87,7 @@ class InsightViewModel : NSObject {
         self.colorHex = "#B20022"
     }
     
-    func analyzeLocationHighRating(feedbacks : [Item]){
+    func analyzeLocationHighRating(feedbacks : [FeedbackItem]){
         let locationData = Dictionary(grouping: feedbacks, by: { $0.geo.countryCode })
         let maxAverageLocation = locationData.max { (b1, b2) -> Bool in
             return average(array: b1.value.map({ return $0.rating })) < average(array: b2.value.map({ return $0.rating }))
@@ -99,7 +99,7 @@ class InsightViewModel : NSObject {
         self.colorHex = "#00B21F"
     }
     
-    func analyzeLocationLowRating(feedbacks : [Item]){
+    func analyzeLocationLowRating(feedbacks : [FeedbackItem]){
         let locationData = Dictionary(grouping: feedbacks, by: { $0.geo.countryCode })
         let minAverageLocation = locationData.min { (b1, b2) -> Bool in
             return average(array: b1.value.map({ return $0.rating })) < average(array: b2.value.map({ return $0.rating }))
@@ -111,7 +111,7 @@ class InsightViewModel : NSObject {
         self.colorHex = "#B20022"
     }
     
-    func analyzePlatformHighRating(feedbacks : [Item]){
+    func analyzePlatformHighRating(feedbacks : [FeedbackItem]){
         let platformData = Dictionary(grouping: feedbacks, by: { $0.browser.platform })
         let maxAveragePlatform = platformData.max { (b1, b2) -> Bool in
             return average(array: b1.value.map({ return $0.rating })) < average(array: b2.value.map({ return $0.rating }))
@@ -123,7 +123,7 @@ class InsightViewModel : NSObject {
         self.colorHex = "#00B21F"
     }
     
-    func analyzePlatformLowRating(feedbacks : [Item]){
+    func analyzePlatformLowRating(feedbacks : [FeedbackItem]){
         let platformData = Dictionary(grouping: feedbacks, by: { $0.browser.platform })
         let minAveragePlatform = platformData.min { (b1, b2) -> Bool in
             return average(array: b1.value.map({ return $0.rating })) < average(array: b2.value.map({ return $0.rating }))

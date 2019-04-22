@@ -23,3 +23,15 @@ let colors = [
     UIColor(netHex: 0x0091ea),
     UIColor(netHex: 0x64ffda)
 ]
+
+func findSQLiteLocation() {
+    let path = FileManager
+        .default
+        .urls(for: .applicationSupportDirectory, in: .userDomainMask)
+        .last?
+        .absoluteString
+        .replacingOccurrences(of: "file://", with: "")
+        .removingPercentEncoding
+
+    print("SQLitePath : ",path ?? "Not found")
+}

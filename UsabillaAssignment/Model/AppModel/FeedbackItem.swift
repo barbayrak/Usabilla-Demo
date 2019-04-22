@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Item : Codable {
+struct FeedbackItem : Codable {
     let id : String
     let browser : Browser
     let geo : GeoLocation

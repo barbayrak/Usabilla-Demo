@@ -1,5 +1,5 @@
 //
-//  Item.swift
+//  Feedback.swift
 //  UsabillaAssignment
 //
 //  Created by Kaan Baris BAYRAK on 17.04.2019.
@@ -9,5 +9,5 @@
 import Foundation
 
 struct Feedback : Codable {
-    let items : [Item]
+    let items : [FeedbackItem]
 }
