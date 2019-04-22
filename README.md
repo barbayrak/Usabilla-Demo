@@ -50,6 +50,7 @@ In order to trend analyze we need to fit a line on rating vs date 2d chart in ou
 and try to guess what will rating be in next day.To problem is a basic regression problem.I can build regression model in many
 frameworks like Scikit-learn,Tensorflow,Keras etc.. but because our context is iOS and Swift i used CreateML framework in MacOS.
 <br/>
+![regression](https://i.ibb.co/gZb0T7g/Screen-Shot-2019-04-23-at-02-02-37.png)
 <br/>
 In order to create an .mlmodel, i simply create a playground in macOS platform and use CreateML framework.You can also create your mlmodel by downloading UsabillaCoreML.playground and usabillaCache.json and put your files in desktop directory
 <br/>
@@ -75,7 +76,7 @@ and based on error, we choose best fit is Regressor or BoostedTreeRegressor then
 What if we want Offline support for our dashboard ? For a simple project we can use URLSessions 's url caching support but for complex projects we use CoreData a lightweight SQL database implementation(SQLİte) for iOS 
 <br/>
 Here is my schema :<br/>
-![logo](https://i.ibb.co/hmyS4nC/Screen-Shot-2019-04-23-at-01-37-51.png)
+![schema](https://i.ibb.co/hmyS4nC/Screen-Shot-2019-04-23-at-01-37-51.png)
 <br/>
 <br/>
 After building my schema i generated entity properties and write core data classes for reading and writing data
@@ -90,71 +91,71 @@ Note: If you want to see SQLite database entries you can use DB Browser for SQLi
 ```swift
 class FeedbackService : NSObject {
 
-static let shared = FeedbackService()
-let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
-let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    static let shared = FeedbackService()
+    let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+    let managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-func fetchAndSyncFeedbacks(completion : @escaping ([FeedbackItem]?,Error?) -> ()){
-let targetUrlString = "http://cache.usabilla.com/example/apidemo.json"
-guard let url = URL(string: targetUrlString) else { return }
+    func fetchAndSyncFeedbacks(completion : @escaping ([FeedbackItem]?,Error?) -> ()){
+        let targetUrlString = "http://cache.usabilla.com/example/apidemo.json"
+        guard let url = URL(string: targetUrlString) else { return }
 
-//Normally URLSession caches the data locally(url cacheing key-value) so it simulates offline data but i am using Core Data to support it so i wrote a config for session in order to disable url cache
-let config = URLSessionConfiguration.default
-config.requestCachePolicy = .reloadIgnoringLocalCacheData
-config.urlCache = nil
-let session = URLSession.init(configuration: config)
+        //Normally URLSession caches the data locally(url cacheing key-value) so it simulates offline data but i am using Core Data to support it so i wrote a config for session in order to disable url cache
+        let config = URLSessionConfiguration.default
+        config.requestCachePolicy = .reloadIgnoringLocalCacheData
+        config.urlCache = nil
+        let session = URLSession.init(configuration: config)
 
-session.dataTask(with: url) { (data, response, error) in
-if let err = error {
-let result = self.getDataFromLocalDatabase()
-completion(result,err)
-return
-}
+        session.dataTask(with: url) { (data, response, error) in
+            if let err = error {
+                let result = self.getDataFromLocalDatabase()
+                completion(result,err)
+                return
+            }
 
-do{
-let feedbacks = try JSONDecoder().decode(Feedback.self, from: data!)
-DispatchQueue.main.async {
-self.updateLocalDatabase(items: feedbacks.items)
-print("Syncing Local Database Finished")
-let result = self.getDataFromLocalDatabase()
-completion(result,nil)
-}
-}catch let parseError {
-let result = self.getDataFromLocalDatabase()
-completion(result,parseError)
-}
-}.resume()
-}
+            do{
+                let feedbacks = try JSONDecoder().decode(Feedback.self, from: data!)
+                DispatchQueue.main.async {
+                    self.updateLocalDatabase(items: feedbacks.items)
+                    print("Syncing Local Database Finished")
+                    let result = self.getDataFromLocalDatabase()
+                    completion(result,nil)
+                }
+            }catch let parseError {
+                let result = self.getDataFromLocalDatabase()
+                completion(result,parseError)
+            }
+        }.resume()
+    }
 
-func updateLocalDatabase(items: [FeedbackItem]){
-print("Updating Local Database")
-managedObjectContext.performAndWait {
-for item in items {
-_ = FeedbackItemEntity.getOrCreate(item: item, context: self.managedObjectContext)
-do {
-try self.managedObjectContext.save()
-}catch let error {
-print("Core Data Error : ",error)
-}
-}
-print("Local Database Updated")
-}
-}
+    func updateLocalDatabase(items: [FeedbackItem]){
+        print("Updating Local Database")
+        managedObjectContext.performAndWait {
+            for item in items {
+                _ = FeedbackItemEntity.getOrCreate(item: item, context: self.managedObjectContext)
+                do {
+                    try self.managedObjectContext.save()
+                }catch let error {
+                    print("Core Data Error : ",error)
+                }
+            }
+            print("Local Database Updated")
+        }
+    }
 
-func getDataFromLocalDatabase() -> [FeedbackItem]{
-print("Local Data Fetching Started")
-let request: NSFetchRequest<FeedbackItemEntity> = NSFetchRequest<FeedbackItemEntity>(entityName:"FeedbackItemEntity")
-request.sortDescriptors = [NSSortDescriptor(key: "createdAt", ascending:false)]
+    func getDataFromLocalDatabase() -> [FeedbackItem]{
+        print("Local Data Fetching Started")
+        let request: NSFetchRequest<FeedbackItemEntity> = NSFetchRequest<FeedbackItemEntity>(entityName:"FeedbackItemEntity")
+        request.sortDescriptors = [NSSortDescriptor(key: "createdAt", ascending:false)]
 
-do {
-let fetchedObjects = try self.managedObjectContext.fetch(request)
-print("Local Data Fetched With Count -> " , fetchedObjects.count)
-return fetchedObjects.map({ return $0.getObjectFromEntity() })
-} catch let error{
-print("Core Data fetch error : ", error)
-return [FeedbackItem]()
-}
-}
+        do {
+            let fetchedObjects = try self.managedObjectContext.fetch(request)
+            print("Local Data Fetched With Count -> " , fetchedObjects.count)
+            return fetchedObjects.map({ return $0.getObjectFromEntity() })
+        } catch let error{
+            print("Core Data fetch error : ", error)
+            return [FeedbackItem]()
+        }
+    }
 
 }
 ```
