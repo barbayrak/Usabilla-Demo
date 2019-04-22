@@ -1,14 +1,14 @@
 //
-//  UsabillaAssignmentUITests.swift
+//  InsightsUITests.swift
 //  UsabillaAssignmentUITests
 //
-//  Created by Kaan Baris BAYRAK on 15.04.2019.
+//  Created by Kaan Baris BAYRAK on 22.04.2019.
 //  Copyright © 2019 Kaan Baris Bayrak. All rights reserved.
 //
 
 import XCTest
 
-class UsabillaAssignmentUITests: XCTestCase {
+class InsightsUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,9 +26,13 @@ class UsabillaAssignmentUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInsightNavigateBackAndForth(){
+        let app = XCUIApplication()
+        app.navigationBars["Dashboard"].children(matching: .button).element(boundBy: 0).tap()
+        app.navigationBars["Insights"].buttons["Dashboard"].tap()
+        XCTAssertTrue(app.navigationBars["Dashboard"].exists)
     }
+    
+    
 
 }

@@ -19,7 +19,6 @@
 		BB55BE182264FAB100543616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE172264FAB100543616 /* AppDelegate.swift */; };
 		BB55BE1F2264FAB100543616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE1E2264FAB100543616 /* Assets.xcassets */; };
 		BB55BE222264FAB100543616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE202264FAB100543616 /* LaunchScreen.storyboard */; };
-		BB55BE382264FAB100543616 /* UsabillaAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE372264FAB100543616 /* UsabillaAssignmentUITests.swift */; };
 		BB55BE4C22650C5600543616 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB55BE4B22650C5600543616 /* Dashboard.storyboard */; };
 		BB55BE4E22650D5000543616 /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE4D22650D5000543616 /* FeedbackService.swift */; };
 		BB55BE502265170300543616 /* FeedbackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55BE4F2265170300543616 /* FeedbackItem.swift */; };
@@ -42,6 +41,9 @@
 		BBE21CA9226DFBAE0079D5E4 /* FeedbackSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CA8226DFBAE0079D5E4 /* FeedbackSpec.swift */; };
 		BBE21CAB226DFE180079D5E4 /* ChartViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CAA226DFE180079D5E4 /* ChartViewModelSpec.swift */; };
 		BBE21CAD226DFE440079D5E4 /* InsightViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CAC226DFE440079D5E4 /* InsightViewModelSpec.swift */; };
+		BBE21CAF226E25A20079D5E4 /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CAE226E25A20079D5E4 /* DashboardUITests.swift */; };
+		BBE21CB1226E25C60079D5E4 /* DashboardFilterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CB0226E25C60079D5E4 /* DashboardFilterUITests.swift */; };
+		BBE21CB3226E25F50079D5E4 /* InsightsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE21CB2226E25F50079D5E4 /* InsightsUITests.swift */; };
 		BBFDEAB72269147000D5903D /* InsightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEAB62269147000D5903D /* InsightsController.swift */; };
 		BBFDEABB22691BFF00D5903D /* InsightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */; };
 		CAB6DACF9C019AE277AC0634 /* Pods_UsabillaAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920BB8CABE22EAB6108FE1AC /* Pods_UsabillaAssignmentTests.framework */; };
@@ -86,7 +88,6 @@
 		BB55BE282264FAB100543616 /* UsabillaAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsabillaAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB55BE2E2264FAB100543616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB55BE332264FAB100543616 /* UsabillaAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsabillaAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB55BE372264FAB100543616 /* UsabillaAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsabillaAssignmentUITests.swift; sourceTree = "<group>"; };
 		BB55BE392264FAB100543616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB55BE4B22650C5600543616 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		BB55BE4D22650D5000543616 /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
@@ -110,6 +111,9 @@
 		BBE21CA8226DFBAE0079D5E4 /* FeedbackSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackSpec.swift; sourceTree = "<group>"; };
 		BBE21CAA226DFE180079D5E4 /* ChartViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModelSpec.swift; sourceTree = "<group>"; };
 		BBE21CAC226DFE440079D5E4 /* InsightViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightViewModelSpec.swift; sourceTree = "<group>"; };
+		BBE21CAE226E25A20079D5E4 /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
+		BBE21CB0226E25C60079D5E4 /* DashboardFilterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardFilterUITests.swift; sourceTree = "<group>"; };
+		BBE21CB2226E25F50079D5E4 /* InsightsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsUITests.swift; sourceTree = "<group>"; };
 		BBEBD408C4CCE76CECFC4A05 /* Pods-UsabillaAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UsabillaAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-UsabillaAssignmentTests/Pods-UsabillaAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBFDEAB62269147000D5903D /* InsightsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsController.swift; sourceTree = "<group>"; };
 		BBFDEABA22691BFF00D5903D /* InsightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightViewModel.swift; sourceTree = "<group>"; };
@@ -307,7 +311,9 @@
 		BB55BE362264FAB100543616 /* UsabillaAssignmentUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BB55BE372264FAB100543616 /* UsabillaAssignmentUITests.swift */,
+				BBE21CAE226E25A20079D5E4 /* DashboardUITests.swift */,
+				BBE21CB0226E25C60079D5E4 /* DashboardFilterUITests.swift */,
+				BBE21CB2226E25F50079D5E4 /* InsightsUITests.swift */,
 				BB55BE392264FAB100543616 /* Info.plist */,
 			);
 			path = UsabillaAssignmentUITests;
@@ -714,7 +720,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB55BE382264FAB100543616 /* UsabillaAssignmentUITests.swift in Sources */,
+				BBE21CAF226E25A20079D5E4 /* DashboardUITests.swift in Sources */,
+				BBE21CB1226E25C60079D5E4 /* DashboardFilterUITests.swift in Sources */,
+				BBE21CB3226E25F50079D5E4 /* InsightsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,6 +875,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UsabillaAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -886,6 +895,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UsabillaAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
