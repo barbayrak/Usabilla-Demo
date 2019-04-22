@@ -7,10 +7,10 @@ You can reach the assignment pdf from [here](https://drive.google.com/file/d/1nZ
 ### Context
 - [Assignment](#assignment)
 - [How To Run](#how-to-run)
-- [Project Details](#projcet-details)
-- [Project Overview Videos](#project-features-videos)
-- [Core ML](#coreml)
-- [Core Data - Offline Sync](#core-data-offline-sync)
+- [Project Details](#project-details)
+- [Project Overview Videos](#project-overview-videos)
+- [Core ML](#core-ml)
+- [Core Data - Offline Sync](#core-data---offline-sync)
 
 
 ## How To Run
